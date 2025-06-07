@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>リンク集サイト</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            color: #555;
+        }
+
+        .bio {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        .banner {
+            width: 100%;
+            height: 200px;
+            background-image: url('https://cdn.glitch.global/90f3661b-413e-4026-bd46-035c947477da/%E3%83%BB_%E3%83%BB.png?v=1739253725438');
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .links {
+            margin-top: 20px;
+        }
+
+        .link-item {
+            background-color: #f8f8f8;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: background-color 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%; /* ボタン全体に幅を指定 */
+            box-sizing: border-box; /* 幅の計算にpaddingを含める */
+        }
+
+        .link-item:hover {
+            background-color: #e0e0e0;
+        }
+
+        .link-item a {
+            text-decoration: none;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%; /* クリック領域をボタン全体に広げる */
+            padding: 10px; /* ボタン内の余白を追加 */
+            box-sizing: border-box;
+        }
+
+        .link-icon {
+            width: 30px;
+            height: 30px;
+        }
+
+        .link-item span {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .plain-text {
+            text-align: center;
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .bio {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile">
+                <img src="https://cdn.glitch.global/90f3661b-413e-4026-bd46-035c947477da/icon.jpg?v=1739253563139" alt="プロフィール画像" class="profile-img">
+                <h1>ねこねこ@ゆっくり実況</h1>
+                <h3>クリエイター</h3>
+                <br>
+                <p class="bio">ねこねこです！自由な動画を投稿しています！</p>
+            </div>
+        </header>
+
+        <!-- バナー画像 -->
+        <div class="banner"></div>
+
+        <!-- リンクなしテキスト -->
+        <div class="plain-text">
+            下にリンクがあります！
+        </div>
+
+        <main>
+            <section class="links">
+                <div class="link-item">
+                    <a href="https://www.youtube.com/@%E3%81%AD%E3%81%93%E3%81%AD%E3%81%93_%E3%82%86%E3%81%A3%E3%81%8F%E3%82%8A%E5%AE%9F%E6%B3%81" target="_blank">
+                        <span>YouTube</span>
+                    </a>
+                </div>
+                <div class="link-item">
+                    <a href="https://www.youtube.com/channel/UCPKaM7vgfBhSVyPDGUOb77w?sub_confirmation=1?sub_confirmation=1" target="_blank">
+                        <span>YouTube登録</span>
+                    </a>
+                </div>
+                              <div class="link-item">
+                    <a href="https://note.com/nekoneko_reimu/" target="_blank">
+                        <span>Note</span>
+                    </a>
+                </div>
+                                            <div class="link-item">
+                    <a href="https://x.com/nekoneko_reimu" target="_blank">
+                        <span>X(見る専)</span>
+                    </a>
+                </div>
+                                            <div class="link-item">
+                    <a href="https://scratch.mit.edu/users/nekoneko_reimu/" target="_blank">
+                        <span>Scratch</span>
+                    </a>
+                </div>
+                <div class="link-item">
+                    <a href="https://www.neko-y.f5.si/" target="_blank">
+                        <span>公式サイト</span>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
